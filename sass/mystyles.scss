@@ -10,6 +10,7 @@ $lightgreen: #77824D;
 
 $navbar-background-color: $green;
 $navbar-item-hover-background-color: $lightgreen;
+$footer-background-color: $green;
 
 // Update Bulma's global variables
 $family-sans-serif: "Nunito", sans-serif;
@@ -25,9 +26,17 @@ $input-shadow: none;
     background-color: $navbar-background-color;
 }
 
+.footer {
+    color: $footer-background-color;
+}
+
 .navbar-item:hover {
     background-color: $navbar-item-hover-background-color;
     color: white;
+}
+
+.navbar-burger:hover {
+    background-color: white;
 }
 
 .background {
@@ -35,6 +44,7 @@ $input-shadow: none;
     background-position: center;
     background-size: cover;
     color: white;
+    position: absolute;
 }
 
 #start-button {

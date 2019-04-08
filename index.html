@@ -7,55 +7,159 @@
     <link rel="stylesheet" href="css/mystyles.css">
     <link rel="icon" href="images/icon.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vuex"></script>
   </head>
   <body>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="/index.html">
-                <img src="images/twopinetrees_logo.png" alt="Two Pines" width="112" height="30">
-            </a>
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div id="navbarBasic" class="navbar-menu">
-            <div class="navbar-end">
-                <a class="navbar-item" href="/gear.html">
-                    GEAR
+    <div id="app">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="/index.html">
+                    <img src="images/twopinetrees_logo.png" alt="Two Pines" width="112" height="30">
                 </a>
-                
-                <a class="navbar-item" href="/howitworks.html">
-                    HOW IT WORKS
-                </a>
-
-                <a class="navbar-item" href="/aboutus.html">
-                    ABOUT US
-                </a>
-
-                <a class="navbar-item" href="/contact.html">
-                    CONTACT
-                </a>
-
-                <a class="navbar-item" href="/cart.html">
-                    <i class="fas fa-shopping-cart"></i>
-                    &nbsp; CART
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
                 </a>
             </div>
-        </div>
-    </nav>
-    <section class="hero is-link is-fullheight-with-navbar background">
-        <div class="hero-body">
-            <div class="container">
-                <div class="columns is-mobile is-centered">
-                    <a class="button is-medium" id="start-button" href="/gear.html">
-                        Start Your Adventure
+            <div id="navbarBasic" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="/gear.html">
+                        GEAR
+                    </a>
+                    
+                    <a class="navbar-item" href="/howitworks.html">
+                        HOW IT WORKS
+                    </a>
+
+                    <a class="navbar-item" href="/aboutus.html">
+                        ABOUT US
+                    </a>
+
+                    <a class="navbar-item" href="/contact.html">
+                        CONTACT
+                    </a>
+
+                    <a class="navbar-item" href="/cart.html">
+                        <i class="fas fa-shopping-cart"></i>
+                        &nbsp; CART
                     </a>
                 </div>
             </div>
+        </nav>
+        <!-- HOME PAGE -->
+        <section class="hero is-fullheight-with-navbar background" v-if="showHome">
+            <div class="container">
+                <div class="hero-body">
+                    <div class="columns is-mobile is-centered">
+                        <a class="button is-medium" id="start-button" v-on:click="(showGear=true),(showHome=false)">
+                            Start Your Adventure
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- HOME PAGE END-->
+
+        <!-- GEAR PAGE -->
+        <div class="container" v-if="showGear">
+            <section class="is-fullheight-with-navbar">
+                <div id="gear-padding">
+                    <h1 class="title is-full is-centered">GEAR</h1>
+                    <div class="columns">
+                        <div class="column is-full-mobile is-half-tablet is-one-quarter-desktop is-one-quarter-fullhd">
+                            <figure class="image is-3by2"><img src="images/gear-setup.jpg"></figure>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-one-quarter-desktop is-one-quarter-fullhd">
+                            <p>2 Person Tent</p>
+                        </div>
+
+                        <div class="column is-full-mobile is-half-tablet is-one-quarter-desktop is-one-quarter-fullhd">
+                            <figure class="image is-3by2"><img src="images/4tent.jpg"></figure>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-one-quarter-desktop is-one-quarter-fullhd">
+                            <p>4 Person Tent</p>
+                        </div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="column is-full-mobile is-half-tablet is-one-quarter-desktop is-one-quarter-fullhd">
+                            <figure class="image is-3by2"><img src="images/6tent.jpg"></figure>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-one-quarter-desktop is-one-quarter-fullhd">
+                            <p>6 Person Tent</p>
+                        </div>
+
+                        <div class="column is-full-mobile is-half-tablet is-one-quarter-desktop is-one-quarter-fullhd">
+                                <figure class="image is-3by2"><img src="images/6tent.jpg"></figure>
+                            </div>
+                            <div class="column is-full-mobile is-half-tablet is-one-quarter-desktop is-one-quarter-fullhd">
+                                <p>6 Person Tent</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-    </section>
+        <!-- GEAR PAGE END-->
+
+        <!-- CONTACT PAGE -->
+        <div class="container" v-if="showContact">
+            <section class="is-fullheight-with-navbar">
+                <div id="gear-padding">
+                    <div class="columns">
+                        <div class="column is-half">
+                            <div class="field">
+                                <label class="label">Name</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Email</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Message</label>
+                                <div class="control">
+                                    <textarea class="textarea" placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-half">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101039.41048252548!2d-113.17209032501226!3d37.684887739071605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80b5617fe05ec2d1%3A0xef14cae28073d1e9!2sCedar+City%2C+UT!5e0!3m2!1sen!2sus!4v1554684202521!5m2!1sen!2sus" width="auto" height="800px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- CONTACT PAGE END -->
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="level">
+                <p class="level-item has-text-centered">
+                    <img src="images/twopinetrees_logo.png" href="/index.html" alt="Two Pines" width="60" height="30">
+                </p>
+                <p class="level-item has-text-centered">
+                    <a class="link is-info">Menu</a>
+                </p>
+                <p class="level-item has-text-centered">
+                    <img src="https://bulma.io/images/bulma-type.png" alt="" style="height: 30px;">
+                </p>
+                <p class="level-item has-text-centered">
+                    <a class="link is-info">Reservations</a>
+                </p>
+                <p class="level-item has-text-centered">
+                    <a class="link is-info" v-on:click="(showContact=true),(showHome=false),(showGear=false),(showHowItWorks=false),(showAbout=false),(showCart=false)">Contact</a>
+                </p>
+            </div>
+        </footer>
+        <!-- FOOTER END-->
+    </div>
+    <script src="app.js"></script>
+    <script src="index.js"></script>
   </body>
-    <script src="index.js"></script>  
 </html>
