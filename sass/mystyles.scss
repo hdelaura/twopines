@@ -1,0 +1,65 @@
+@charset "utf-8";
+@import "../mybulma/bulma-0.7.4/bulma.sass";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+// Set your brand colors
+$green: #44540B;
+$lightgreen: #77824D;
+
+$navbar-background-color: $green;
+$navbar-item-hover-background-color: $lightgreen;
+
+// Update Bulma's global variables
+$family-sans-serif: "Nunito", sans-serif;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+.navbar {
+    background-color: $navbar-background-color;
+}
+
+.navbar-item:hover {
+    background-color: $navbar-item-hover-background-color;
+    color: white;
+}
+
+.background {
+    background-image: url(../images/tent_sunrise.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+#start-button {
+    background-color: $green;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+#start-button:hover {
+    background-color: $lightgreen;
+    color: white;
+}
+
+#gear-padding {
+    padding: $section-padding;
+}
+
+// Import only what you need from Bulma
+// @import "../node_modules/bulma/sass/utilities/_all.sass";
+// @import "../node_modules/bulma/sass/base/_all.sass";
+// @import "../node_modules/bulma/sass/elements/button.sass";
+// @import "../node_modules/bulma/sass/elements/container.sass";
+// @import "../node_modules/bulma/sass/elements/form.sass";
+// @import "../node_modules/bulma/sass/elements/title.sass";
+// @import "../node_modules/bulma/sass/components/navbar.sass";
+// @import "../node_modules/bulma/sass/layout/hero.sass";
+// @import "../node_modules/bulma/sass/layout/section.sass";
