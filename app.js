@@ -9,8 +9,5 @@ const app = new Vue ({
         showCart: false
     },
     methods: {
-        toggleBox() {
-            this.display == 'redbox' ? this.display = 'greenbox' : this.display = 'redbox'
-        }
     }
 });
