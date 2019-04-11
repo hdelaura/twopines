@@ -1,6 +1,6 @@
 import Vue from 'vue'
 
-const app = new Vue ({
+var app = new Vue ({
     el: '#app',
     data: { 
         showHome: true,
