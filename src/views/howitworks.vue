@@ -1,21 +1,21 @@
 <template>
 <body>
     <nav \>
-    <home \>
+    <howitworks \>
     <footer \>
 </body>
 </template>
 
 <script>
 import nav from '../components/nav.vue'
-import home from '../components/home.vue'
+import howitworks from '../components/howitworks.vue'
 import footer from '../components/footer.vue'
 
 export default {
   name: 'App',
   components: {
     nav,
-    home,
+    howitworks,
     footer
   }
 }

@@ -1,9 +1,11 @@
 <template>
 <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-        <a class="navbar-item" href="/index.html">
+        <router-link to="/home">
+        <a class="navbar-item">
             <img src="images/twopinetrees_logo.png" alt="Two Pines" width="112" height="30">
         </a>
+        </router-link>
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -12,25 +14,25 @@
     </div>
     <div id="navbarBasic" class="navbar-menu">
         <div class="navbar-end">
-            <a class="navbar-item" href="/gear.html">
-                RENTAL GEAR
-            </a>
+            <router-link to="/gear">
+            <a class="navbar-item"> RENTAL GEAR </a>
+            </router-link>
             
-            <a class="navbar-item" href="/howitworks.html">
-                HOW IT WORKS
-            </a>
+            <router-link to="/howitworks">
+            <a class="navbar-item"> HOW IT WORKS</a>
+            </router-link>
 
-            <a class="navbar-item" href="/aboutus.html">
-                ABOUT US
-            </a>
+            <router-link to="/about">
+            <a class="navbar-item">ABOUT US</a>
+            </router-link>
 
-            <a class="navbar-item" href="/contact.html">
-                CONTACT
-            </a>
+            <router-link to="/contact">
+            <a class="navbar-item">CONTACT</a>
+            </router-link>
 
-            <a class="navbar-item" href="/booking.html">
-                BOOKING
-            </a>
+            <router-link to="/booking">
+            <a class="navbar-item">BOOKING</a>
+            </router-link>
         </div>
     </div>
 </nav>

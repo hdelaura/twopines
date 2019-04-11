@@ -10,7 +10,7 @@ export default {
     VueHotelDatepicker
   }
   //
-  // ... skip
+  // skip
   //
 }
 </script>

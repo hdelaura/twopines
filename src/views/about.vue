@@ -1,21 +1,21 @@
 <template>
 <body>
     <nav \>
-    <home \>
+    <info \>
     <footer \>
 </body>
 </template>
 
 <script>
 import nav from '../components/nav.vue'
-import home from '../components/home.vue'
+import info from '../components/info.vue'
 import footer from '../components/footer.vue'
 
 export default {
   name: 'App',
   components: {
     nav,
-    home,
+    info,
     footer
   }
 }
