@@ -1,21 +1,21 @@
 <template>
 <body>
     <navbar></navbar>
-    <start></start>
+    <rentals></rentals>
     <pagefooter></pagefooter>
 </body>
 </template>
 
 <script>
 import navbar from '../components/navbar.vue'
-import start from '../components/start.vue'
+import rentals from '../components/rentals.vue'
 import pagefooter from '../components/pagefooter.vue'
 
 export default {
-  name: 'Home',
+  name: 'gear',
   components: {
     navbar,
-    start,
+    rentals,
     pagefooter
   }
 }

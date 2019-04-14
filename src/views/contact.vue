@@ -1,21 +1,21 @@
 <template>
 <body>
-    <navbar></navbar>
-    <start></start>
-    <pagefooter></pagefooter>
+  <navbar></navbar>
+  <contactform></contactform>
+  <pagefooter></pagefooter>
 </body>
 </template>
 
 <script>
 import navbar from '../components/navbar.vue'
-import start from '../components/start.vue'
+import contactform from '../components/contactform.vue'
 import pagefooter from '../components/pagefooter.vue'
 
 export default {
-  name: 'Home',
+  name: 'Contact',
   components: {
     navbar,
-    start,
+    contactform,
     pagefooter
   }
 }

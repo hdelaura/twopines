@@ -1,21 +1,21 @@
 <template>
 <body>
     <navbar></navbar>
-    <start></start>
+    <process></process>
     <pagefooter></pagefooter>
 </body>
 </template>
 
 <script>
 import navbar from '../components/navbar.vue'
-import start from '../components/start.vue'
+import process from '../components/process.vue'
 import pagefooter from '../components/pagefooter.vue'
 
 export default {
-  name: 'Home',
+  name: 'howitworks',
   components: {
     navbar,
-    start,
+    process,
     pagefooter
   }
 }
