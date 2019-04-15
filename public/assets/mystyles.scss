@@ -7,6 +7,8 @@
 // Set your brand colors
 $green: #44540B;
 $lightgreen: #77824D;
+$navbar-height: 6rem;
+$navbar-item-hover-color: #77824D;
 
 $navbar-background-color: $green;
 $navbar-item-hover-background-color: $lightgreen;
@@ -24,6 +26,7 @@ $input-shadow: none;
 
 .navbar {
     background-color: $navbar-background-color;
+    height: $navbar-height;
 }
 
 .pagefooter {
@@ -32,9 +35,8 @@ $input-shadow: none;
 
 }
 
-.navbar-item:hover {
+.navbar-item a:hover {
     background-color: $navbar-item-hover-background-color;
-    color: white;
 }
 
 .background {

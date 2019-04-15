@@ -7,7 +7,7 @@
         <p class="level-item has-text-centered">
             <a class="link is-info">Menu</a>
         </p>
-        <p class="level-item has-text-centered">
+        <p class="level-item has-text-centered is-desktop">
             <img src="../../public/assets/twopinetrees_logo.png" href="/index.html" alt="Two Pines" width="60" height="20">
         </p>
         <p class="level-item has-text-centered">
