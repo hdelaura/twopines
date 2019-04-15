@@ -21,8 +21,8 @@ yarn-error.log*
 *.sw*
 
 #Other
-*.editorconfig
-*.eslintrc.js
-*.browserlistrc
-*.postcss.config.js
-*.babel.config.js
+.editorconfig
+.eslintrc.js
+.browserlistrc
+.postcss.config.js
+.babel.config.js
