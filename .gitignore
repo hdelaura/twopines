@@ -19,3 +19,10 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
+
+#Other
+.editorconfig
+.eslintrc.js
+.browserlistrc
+.postcss.config.js
+.babel.config.js
