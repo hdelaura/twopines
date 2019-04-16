@@ -2,12 +2,12 @@
 <footer class="pagefooter">
     <div class="level">
         <p class="level-item has-text-centered">
-            <a class="link is-info">Menu</a>
+            <a class="link is-info">Home</a>
         </p>
         <p class="level-item has-text-centered">
-            <a class="link is-info">Menu</a>
+            <a class="link is-info">About</a>
         </p>
-        <p class="level-item has-text-centered is-desktop">
+        <p class="level-item has-text-centered is-hidden-mobile">
             <img src="../../public/assets/twopinetrees_logo.png" href="/index.html" alt="Two Pines" width="60" height="20">
         </p>
         <p class="level-item has-text-centered">
@@ -32,9 +32,14 @@ $lightgreen: #77824D; */
   width: 100%;
   background-color: #44540B;
   color: white;
+  margin-top: 15px;
 }
 
 .pagefooter a.link {
   color: white;
+}
+
+.pagefooter .a:hover {
+  color: #77824D;
 }
 </style>

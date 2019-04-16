@@ -1,21 +1,21 @@
 <template>
 <body>
     <navbar></navbar>
-    <calendar></calendar>
+    <reserveform></reserveform>
     <pagefooter></pagefooter>
 </body>
 </template>
 
 <script>
 import navbar from '../components/navbar.vue'
-import calendar from '../components/calendar.vue'
+import reserveform from '../components/reserveform.vue'
 import pagefooter from '../components/pagefooter.vue'
 
 export default {
   name: 'booking',
   components: {
     navbar,
-    calendar,
+    reserveform,
     pagefooter
   }
 }

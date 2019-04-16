@@ -3,6 +3,11 @@
         <section class="is-fullheight-with-navbar">
             <div id="gear-padding">
                 <div class="columns">
+                    <div class="column is-full">
+                        <p class="title is-1 is-spaced">CONTACT US</p>
+                    </div>
+                </div>
+                <div class="columns">
                     <div class="column is-half">
                         <form @submit.prevent="handleSubmit">
                             <div class="field">
@@ -24,7 +29,7 @@
                                 </div>
                             </div>
                             <div class="control">
-                                <button class="button is-link" type="submit">Submit</button>
+                                <button class="submit-btn button" type="submit">Submit</button>
                             </div>
                         </form>
                     </div>
