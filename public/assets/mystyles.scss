@@ -13,6 +13,7 @@ $navbar-item-hover-color: #77824D;
 $navbar-background-color: $green;
 $navbar-item-hover-background-color: $lightgreen;
 $footer-background-color: $green;
+$button-background-color: lightgrey;
 
 // Update Bulma's global variables
 $family-sans-serif: "Nunito", sans-serif;
@@ -32,7 +33,6 @@ $input-shadow: none;
 .pagefooter {
     color: $footer-background-color;
     margin-bottom: 0;
-
 }
 
 .navbar-item a:hover {
@@ -63,4 +63,20 @@ $input-shadow: none;
 
 #gear-padding {
     padding: $section-padding;
+}
+
+.container {
+    position: relative;
+}
+
+.submit-btn {
+    background-color: $button-background-color;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.submit-btn:hover {
+    background-color: $lightgreen;
+    color: white;
 }

@@ -4,6 +4,11 @@
             <div id="gear-padding">
                 <div class="columns">
                     <div class="column is-full">
+                        <p class="title is-1 is-spaced">HOW IT WORKS</p>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column is-full">
                         <h1 class="title">
                             What are the rental terms?
                         </h1>
