@@ -2,8 +2,8 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
         <router-link to="/">
-        <a>
-            <img src="../../public/assets/twopinetrees_logo.png" alt="Two Pines" width="50" height="25">
+        <a class="navlogo">
+            <img src="../../public/assets/twopinetrees_logo.png" alt="Two Pines" width="45" height="20">
         </a>
         </router-link>
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"  @click="isOpen = !isOpen" v-bind:class="{'is-active': isOpen}">

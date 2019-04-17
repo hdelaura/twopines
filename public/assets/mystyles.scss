@@ -30,23 +30,45 @@ $input-shadow: none;
     height: $navbar-height;
 }
 
+.navbar-menu.is-active {
+    background-color: $lightgreen !important;
+    color: white;
+}
+
 .pagefooter {
     color: $footer-background-color;
     margin-bottom: 0;
 }
 
 .navbar-item {
+    background: $green !important;
     color:white;
     height: 6rem;
+  }
+
+.navbar-item:hover {
+    background-color: $lightgreen !important;
+    color: white;
 }
 
-.navbar-item a:hover {
-    background-color: $navbar-item-hover-background-color;
+a.navbar-item:hover {
+    color: white;
+}
+
+.navbar-item.a:hover {
+    background: $lightgreen;
+}
+
+.navbar-burger {
     color: white;
 }
 
 .navbar-burger:hover {
-    background-color: white;
+    background-color: $lightgreen;
+}
+
+.navlogo {
+    margin: 10px;
 }
 
 .background {
