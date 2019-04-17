@@ -1,5 +1,7 @@
 # Two Pines Website
 
+Made with Vue.js and Bulma Sass
+
 ## Project setup
 ```
 npm install
