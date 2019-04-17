@@ -7,82 +7,108 @@
                 <div class="column is-half">
                     <VueHotelDatepicker />
                 </div>
-                <div class="field">
-                    <div class="column">
+                <div class="column is-one-quarter">
+                    <div class="field">
                         <label class="checkbox">
                         <input type="checkbox">
                         Tents
                         </label>
                     </div>
-                    <div class="column">
-                        <div class="control">
-                        <div class="select">
-                            <select>
-                            <option>QTY</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            </select>
-                        </div>
-                        </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="control">
+                    <div class="select">
+                        <select>
+                        <option>QTY</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        </select>
                     </div>
-                    <div class="column is-half"></div>
-                    <div class="column">
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column is-half">
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="field">
                         <label class="checkbox">
                         <input type="checkbox">
                         Sleeping Bags
                         </label>
                     </div>
-                    <div class="column">
-                        <div class="select">
-                            <select>
-                            <option>QTY</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
-                            <option>9</option>
-                            <option>10</option>
-                            </select>
-                        </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="control">
+                    <div class="select">
+                        <select>
+                        <option>QTY</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        </select>
                     </div>
-                    <div class="column is-half"></div>
-                    <div class="column">
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column is-half">
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="field">
                         <label class="checkbox">
                         <input type="checkbox">
-                        Cookware Set
+                        Kitchen Kit
                         </label>
                     </div>
-                    <div class="column">
-                        <div class="select">
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="control">
+                    <div class="select">
                         <select>
-                            <option>QTY</option>
-                            <option>1</option>
-                            <option>2</option>
+                        <option>QTY</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
                         </select>
-                        </div>
                     </div>
-                    <div class="column is-half"></div>
-                    <div class="column">
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column is-half">
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="field">
                         <label class="checkbox">
                         <input type="checkbox">
-                        Car Shade
+                        Chairs
                         </label>
                     </div>
-                    <div class="column">
-                        <div class="select">
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="control">
+                    <div class="select">
                         <select>
-                            <option>QTY</option>
-                            <option>1</option>
-                            <option>2</option>
+                        <option>QTY</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
                         </select>
-                        </div>
                     </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column is-half">
+                </div>
+                <div class="column is-half">
+                    <a class="button is-link is-outlined">Submit Order</a>
                 </div>
             </div>
         </div>
@@ -102,3 +128,15 @@ export default {
   //
 }
 </script>
+
+<option>QTY</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>

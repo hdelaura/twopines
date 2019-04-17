@@ -29,13 +29,24 @@ $input-shadow: none;
     background-color: $navbar-background-color;
     height: $navbar-height;
 }
+
 .pagefooter {
     color: $footer-background-color;
     margin-bottom: 0;
 }
 
+.navbar-item {
+    color:white;
+    height: 6rem;
+}
+
 .navbar-item a:hover {
     background-color: $navbar-item-hover-background-color;
+    color: white;
+}
+
+.navbar-burger:hover {
+    background-color: white;
 }
 
 .background {
@@ -62,6 +73,7 @@ $input-shadow: none;
 
 #gear-padding {
     padding: $section-padding;
+    margin-bottom: 25px;
 }
 
 .submit-btn {
@@ -74,4 +86,12 @@ $input-shadow: none;
 .submit-btn:hover {
     background-color: $lightgreen;
     color: white;
+}
+
+.rental-padding {
+    padding-bottom: 60px;
+}
+
+.p-margin {
+    margin-top: 10px;
 }
