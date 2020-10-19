@@ -21,7 +21,7 @@ yarn-error.log*
 *.sw*
 
 #Other
-.config.js
+vue.config.js
 .editorconfig
 .eslintrc.js
 .browserlistrc
