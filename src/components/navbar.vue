@@ -36,11 +36,11 @@
 
 <script>
 export default {
-    data: function() {
-        return {
-            isOpen: false
-        }
+  data: function () {
+    return {
+      isOpen: false
     }
+  }
 }
 </script>
 
