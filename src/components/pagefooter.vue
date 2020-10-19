@@ -1,20 +1,28 @@
 <template>
-<footer class="pagefooter">
+<footer class="pagefooter is-hidden-mobile">
     <div class="level">
         <p class="level-item has-text-centered">
-            <a class="link is-info">Menu</a>
+            <router-link to="/">
+            <a class="link is-info">Home</a>
+            </router-link>
         </p>
         <p class="level-item has-text-centered">
-            <a class="link is-info">Menu</a>
+            <router-link to="/about">
+            <a class="link is-info">About</a>
+            </router-link>
         </p>
         <p class="level-item has-text-centered is-desktop">
             <img src="../../public/assets/twopinetrees_logo.png" href="/index.html" alt="Two Pines" width="60" height="20">
         </p>
         <p class="level-item has-text-centered">
+            <router-link to="/booking">
             <a class="link is-info">Reservations</a>
+            </router-link>
         </p>
         <p class="level-item has-text-centered">
+            <router-link to="/contact">
             <a class="link is-info">Contact</a>
+            </router-link>
         </p>
     </div>
 </footer>

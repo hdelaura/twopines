@@ -13,6 +13,7 @@ $navbar-item-hover-color: #77824D;
 $navbar-background-color: $green;
 $navbar-item-hover-background-color: $lightgreen;
 $footer-background-color: $green;
+$button-background-color: lightgrey;
 
 // Update Bulma's global variables
 $family-sans-serif: "Nunito", sans-serif;
@@ -29,14 +30,45 @@ $input-shadow: none;
     height: $navbar-height;
 }
 
+.navbar-menu.is-active {
+    background-color: $lightgreen !important;
+    color: white;
+}
+
 .pagefooter {
     color: $footer-background-color;
     margin-bottom: 0;
-
 }
 
-.navbar-item a:hover {
-    background-color: $navbar-item-hover-background-color;
+.navbar-item {
+    background: $green !important;
+    color:white;
+    height: 6rem;
+  }
+
+.navbar-item:hover {
+    background-color: $lightgreen !important;
+    color: white;
+}
+
+a.navbar-item:hover {
+    color: white;
+}
+
+.navbar-item.a:hover {
+    background: $lightgreen;
+}
+
+.navbar-burger {
+    color: white;
+}
+
+.navbar-burger:hover {
+    background-color: $lightgreen;
+}
+
+.navlogo {
+    margin: 10px;
 }
 
 .background {
@@ -63,4 +95,25 @@ $input-shadow: none;
 
 #gear-padding {
     padding: $section-padding;
+    margin-bottom: 25px;
+}
+
+.submit-btn {
+    background-color: $button-background-color;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.submit-btn:hover {
+    background-color: $lightgreen;
+    color: white;
+}
+
+.rental-padding {
+    padding-bottom: 60px;
+}
+
+.p-margin {
+    margin-top: 10px;
 }
