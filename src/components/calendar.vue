@@ -1,7 +1,4 @@
 <template>
-<<<<<<< HEAD
-  <VueHotelDatepicker />
-=======
 <div class="container">
   <section class="is-fullheight-with-navbar">
     <div id="gear-padding">
@@ -14,27 +11,17 @@
     </div>
   </section>
 </div>
->>>>>>> 3a4ba638f160351b0bf3cba2b7ff3f603f42c164
 </template>
 
 <script>
 import VueHotelDatepicker from '@northwalker/vue-hotel-datepicker'
 export default {
-<<<<<<< HEAD
-    name: 'App',
-    components: {
-=======
   name: 'App',
   components: {
->>>>>>> 3a4ba638f160351b0bf3cba2b7ff3f603f42c164
     VueHotelDatepicker
   }
   //
   // skip
   //
 }
-<<<<<<< HEAD
 </script>
-=======
-</script>
->>>>>>> 3a4ba638f160351b0bf3cba2b7ff3f603f42c164

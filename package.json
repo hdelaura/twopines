@@ -1,15 +1,4 @@
 {
-<<<<<<< HEAD
-    "name": "Two Pines",
-    "version": "1.0.0",
-    "description": "",
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "@northwalker/vue-hotel-datepicker": "^2.0.1"
-    },
-    "scripts": {}
-=======
   "name": "test",
   "version": "0.1.0",
   "private": true,
@@ -47,5 +36,4 @@
     "sass-loader": "^7.3.1",
     "vue-template-compiler": "^2.6.12"
   }
->>>>>>> 3a4ba638f160351b0bf3cba2b7ff3f603f42c164
 }
