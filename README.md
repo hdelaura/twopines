@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# twopines
-=======
 # Two Pines Website
 
 ## Project setup
@@ -30,4 +27,3 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
->>>>>>> 3a4ba638f160351b0bf3cba2b7ff3f603f42c164
